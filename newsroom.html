@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Newsroom | Insights, Founder Notes &amp; Dispatches — Trinova Studio</title>
+<meta name="description" content="Company announcements, founder notes, game development logs, AI and software insights, and CGI production stories from Trinova Studio, Trinova Business and Trinova Production."/>
+<meta name="keywords" content="Trinova news, Trinova Studio blog, game development India, Unreal Engine, AI in production, CGI animation news, Trinova founder journal, Rivals of Water, enterprise software India, Trinova press release"/>
+<link rel="canonical" href="https://www.trinovastudio.in/newsroom.html"/>
+<meta property="og:title" content="Trinova Newsroom | Insights &amp; Dispatches"/>
+<meta property="og:description" content="The latest narratives, technical breakthroughs, and global updates from Trinova Studio, Trinova Business and Trinova Production."/>
+<meta property="og:type" content="website"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%237442B0'/%3E%3Ctext x='16' y='22' font-family='Inter,sans-serif' font-size='16' font-weight='700' fill='white' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="assets/js/tailwind-config.js"></script>
+<link rel="stylesheet" href="assets/css/style.css"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Trinova Newsroom",
+  "url": "https://www.trinovastudio.in/newsroom.html",
+  "publisher": { "@type": "Organization", "name": "Trinova Studio Pvt. Ltd." },
+  "blogPost": [
+    {
+      "@type": "BlogPosting",
+      "headline": "How We Optimize Large Open Worlds with Nanite and Lumen",
+      "articleSection": "Engineering",
+      "author": { "@type": "Organization", "name": "Trinova Studio" }
+    }
+  ]
+}
+</script>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased overflow-x-hidden selection:bg-mist-purple selection:text-primary">
+
+<a href="#main-content" class="skip-link font-label-md text-label-md">Skip to content</a>
+
+<div class="fixed inset-0 pointer-events-none z-[-1] overflow-hidden">
+<div class="absolute top-[-15%] left-1/2 -translate-x-1/2 w-[70vw] h-[50vw] rounded-full bg-mist-purple/25 blur-[140px]"></div>
+</div>
+
+<header id="site-header" class="fixed top-0 w-full z-50 glass-nav border-b border-white/20 transition-all duration-500">
+<nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-5 max-w-container-max mx-auto">
+    <a href="index.html" class="flex items-center group">
+        <img src="https://bastarfoods.com/wp-content/uploads/2026/08/Trinova.png"
+             alt="Trinova Studio"
+             class="h-11 md:h-12 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+             loading="eager"
+             decoding="async">
+    </a>
+<div class="hidden lg:flex items-center gap-9">
+<a data-nav="index.html" href="index.html" class="nav-link font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300">Home</a>
+<a data-nav="company.html" href="company.html" class="nav-link font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300">Company</a>
+<a data-nav="industries.html" href="industries.html" class="nav-link font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300">Industries</a>
+<a data-nav="newsroom.html" href="newsroom.html" class="nav-link font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300">Newsroom</a>
+<a data-nav="careers.html" href="careers.html" class="nav-link font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300">Careers</a>
+<a data-nav="contact.html" href="contact.html" class="nav-link font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<a href="contact.html" class="hidden md:inline-flex bg-imperial-purple text-on-primary font-label-md text-label-md uppercase tracking-widest px-7 py-3 rounded-full hover:shadow-[0_12px_30px_rgba(116,66,176,0.35)] hover:-translate-y-0.5 transition-all duration-500">Start a Project</a>
+<button id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu" class="lg:hidden text-on-surface w-10 h-10 flex items-center justify-center rounded-full hover:bg-black/5 transition-colors">
+<span id="icon-menu-open" class="material-symbols-outlined">menu</span>
+<span id="icon-menu-close" class="material-symbols-outlined hidden">close</span>
+</button>
+</div>
+</nav>
+<div id="mobile-menu" class="lg:hidden border-t border-white/20">
+<div class="flex flex-col px-margin-mobile py-6 gap-1 max-w-container-max mx-auto">
+<a data-nav="index.html" href="index.html" class="nav-link font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary py-3 border-b border-black/5">Home</a>
+<a data-nav="company.html" href="company.html" class="nav-link font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary py-3 border-b border-black/5">Company</a>
+<a data-nav="industries.html" href="industries.html" class="nav-link font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary py-3 border-b border-black/5">Industries</a>
+<a data-nav="newsroom.html" href="newsroom.html" class="nav-link font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary py-3 border-b border-black/5">Newsroom</a>
+<a data-nav="careers.html" href="careers.html" class="nav-link font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary py-3 border-b border-black/5">Careers</a>
+<a data-nav="contact.html" href="contact.html" class="nav-link font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary py-3 border-b border-black/5">Contact</a>
+<a href="contact.html" class="mt-4 bg-imperial-purple text-on-primary text-center font-label-md text-label-md uppercase tracking-widest px-7 py-4 rounded-full">Start a Project</a>
+</div>
+</div>
+</header>
+
+<main id="main-content" class="pt-32 md:pt-48 pb-section-gap">
+<!-- HERO -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap text-center relative z-10">
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary reveal-on-scroll active">The Trinova Newsroom</span>
+<h1 class="font-display-xl text-headline-lg-mobile sm:text-display-lg md:text-display-xl text-on-surface mb-6 mt-4 reveal-on-scroll active stagger-1">Insights &amp; Dispatches</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12 reveal-on-scroll active stagger-2">The latest narratives, technical breakthroughs, founder notes, and global updates from across the Trinova ecosystem.</p>
+<div id="filter-chips" class="flex flex-wrap justify-center gap-3 md:gap-4 reveal-on-scroll active stagger-3">
+<button data-filter="all" class="chip chip-active">All</button>
+<button data-filter="engineering" class="chip">Engineering</button>
+<button data-filter="creative" class="chip">Creative</button>
+<button data-filter="business" class="chip">Business</button>
+<button data-filter="company" class="chip">Company</button>
+<button data-filter="research" class="chip">Research</button>
+<button data-filter="careers" class="chip">Careers</button>
+</div>
+</section>
+
+<!-- FEATURED -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap relative z-10">
+<article class="glass-card rounded-xl overflow-hidden p-6 md:p-8 flex flex-col lg:flex-row gap-gutter items-center group cursor-pointer reveal-on-scroll">
+<div class="w-full lg:w-2/3 h-56 md:h-64 lg:h-[440px] rounded-lg overflow-hidden relative aether-art">
+<div class="aether-orb w-56 h-56 bg-[#8E5CCB]/30 -top-14 -right-14"></div>
+<div class="aether-orb w-40 h-40 bg-[#D7C2F6]/50 bottom-6 left-6"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-7xl md:text-8xl opacity-50 group-hover:scale-110 transition-transform duration-700">deployed_code</span>
+</div>
+</div>
+<div class="w-full lg:w-1/3 flex flex-col justify-center">
+<span class="font-label-md text-label-md text-imperial-purple uppercase tracking-wider mb-4 inline-block">Unreal Engine Lab &middot; Engineering</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface mb-6">How We Optimize Large Open Worlds with Nanite and Lumen</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Inside Trinova Studio's real-time rendering pipeline for Rivals of Water — the architectural shifts and algorithmic breakthroughs enabling photorealistic, streamable environments to run seamlessly at scale.</p>
+<div class="flex items-center gap-2 text-imperial-purple font-label-md text-label-md uppercase tracking-wider group-hover:underline decoration-2 underline-offset-4 transition-all">
+Read Story
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</div>
+</div>
+</article>
+</section>
+
+<!-- ARTICLE GRID -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 mb-section-gap">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-12">Recent Dispatches</h3>
+<div id="article-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter"></div>
+<p id="empty-state" class="hidden text-center font-body-md text-on-surface-variant py-16">No dispatches in this category yet — check back soon.</p>
+</section>
+
+<!-- SPECIAL SERIES -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="text-center mb-14 reveal-on-scroll">
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary">Recurring Series</span>
+<h2 class="font-display-lg text-headline-lg-mobile md:text-display-lg mt-4">Content You Can Follow</h2>
+<p class="font-body-md text-on-surface-variant max-w-2xl mx-auto mt-4">The Newsroom is a living publication, not just a company blog — these are the series readers come back for.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<div class="glass-panel p-8 rounded-xl reveal-on-scroll">
+<span class="material-symbols-outlined text-imperial-purple text-3xl mb-4 block">edit_note</span>
+<h4 class="font-headline-md text-lg mb-2">Founder Notes</h4>
+<p class="font-body-md text-on-surface-variant">A monthly letter from the founder sharing lessons, experiences, and where Trinova is headed next.</p>
+</div>
+<div class="glass-panel p-8 rounded-xl reveal-on-scroll stagger-1">
+<span class="material-symbols-outlined text-imperial-purple text-3xl mb-4 block">visibility</span>
+<h4 class="font-headline-md text-lg mb-2">Inside Trinova</h4>
+<p class="font-body-md text-on-surface-variant">Behind-the-scenes stories about projects, workflows, team culture, and everyday life at the studio.</p>
+</div>
+<div class="glass-panel p-8 rounded-xl reveal-on-scroll stagger-2">
+<span class="material-symbols-outlined text-imperial-purple text-3xl mb-4 block">science</span>
+<h4 class="font-headline-md text-lg mb-2">Unreal Engine Lab</h4>
+<p class="font-body-md text-on-surface-variant">Technical articles, experiments, optimization guides, and production techniques using Unreal Engine.</p>
+</div>
+<div class="glass-panel p-8 rounded-xl reveal-on-scroll stagger-3">
+<span class="material-symbols-outlined text-imperial-purple text-3xl mb-4 block">rocket_launch</span>
+<h4 class="font-headline-md text-lg mb-2">Build in Public</h4>
+<p class="font-body-md text-on-surface-variant">Regular updates documenting the development of Rivals of Water — concepts, prototypes, and milestones.</p>
+</div>
+<div class="glass-panel p-8 rounded-xl reveal-on-scroll stagger-4">
+<span class="material-symbols-outlined text-imperial-purple text-3xl mb-4 block">school</span>
+<h4 class="font-headline-md text-lg mb-2">Tech Explained</h4>
+<p class="font-body-md text-on-surface-variant">Simple, educational articles that explain AI, game engines, CGI, and software architecture in plain terms.</p>
+</div>
+<div class="glass-panel p-8 rounded-xl reveal-on-scroll">
+<span class="material-symbols-outlined text-imperial-purple text-3xl mb-4 block">insights</span>
+<h4 class="font-headline-md text-lg mb-2">Industry Watch</h4>
+<p class="font-body-md text-on-surface-variant">Curated commentary on developments in gaming, software, AI and creative production — with Trinova's take.</p>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="w-full relative bg-surface-container-lowest border-t border-surface-container">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="md:col-span-2 space-y-6">
+<div class="flex items-center gap-3">
+<span class="w-9 h-9 rounded-full bg-gradient-to-br from-[#8E5CCB] to-[#5b2796] flex items-center justify-center">
+<span class="text-white font-display-lg text-sm font-bold">T</span>
+</span>
+<span class="font-display-lg text-headline-md tracking-tighter text-on-surface">Trinova</span>
+</div>
+<p class="font-body-md text-on-surface-variant max-w-sm">Precision in Engineering. Excellence in Design. Trinova Studio Pvt. Ltd. is a multidisciplinary technology company building software, games and creative experiences that help businesses and ideas grow.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md uppercase tracking-widest text-primary">Ecosystem</h4>
+<ul class="space-y-3">
+<li><a href="https://trinovastudio.in" target="_blank" rel="noopener" class="font-body-md text-on-surface-variant hover:text-primary hover:underline underline-offset-4 transition-all">Trinova Studio</a></li>
+<li><a href="https://trinovabuniess.in" target="_blank" rel="noopener" class="font-body-md text-on-surface-variant hover:text-primary hover:underline underline-offset-4 transition-all">Trinova Business</a></li>
+<li><a href="https://trinovaproduction.in" target="_blank" rel="noopener" class="font-body-md text-on-surface-variant hover:text-primary hover:underline underline-offset-4 transition-all">Trinova Production</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md uppercase tracking-widest text-primary">Company</h4>
+<ul class="space-y-3">
+<li><a href="company.html" class="font-body-md text-on-surface-variant hover:text-primary hover:underline underline-offset-4 transition-all">About Us</a></li>
+<li><a href="careers.html" class="font-body-md text-on-surface-variant hover:text-primary hover:underline underline-offset-4 transition-all">Careers</a></li>
+<li><a href="contact.html" class="font-body-md text-on-surface-variant hover:text-primary hover:underline underline-offset-4 transition-all">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-surface-container">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-on-surface-variant text-sm">© <span data-year></span> Trinova Studio Pvt. Ltd. All rights reserved.</p>
+<div class="flex gap-6">
+<a href="#" class="font-body-md text-on-surface-variant hover:text-primary transition-colors text-sm">Privacy Policy</a>
+<a href="#" class="font-body-md text-on-surface-variant hover:text-primary transition-colors text-sm">Terms of Service</a>
+<a href="#" class="font-body-md text-on-surface-variant hover:text-primary transition-colors text-sm">Cookie Policy</a>
+</div>
+</div>
+</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+  const ARTICLES = [
+    { category: "company", tag: "Founder Journal", icon: "auto_stories", title: "Why I Started Trinova", excerpt: "A founder's journal entry on turning a single passion project into a multidisciplinary technology ecosystem — and the lessons learned building a team from scratch.", date: "2024-10-22" },
+    { category: "company", tag: "Company News", icon: "campaign", title: "Trinova Studio Officially Incorporated", excerpt: "Trinova Studio Pvt. Ltd. marks its official incorporation, formalizing the ecosystem of Trinova Studio, Trinova Business and Trinova Production under one brand.", date: "2024-10-18" },
+    { category: "creative", tag: "Build in Public", icon: "sports_esports", title: "Behind the Development of Rivals of Water", excerpt: "Concepts, prototypes, and early milestones from Trinova Studio's flagship original IP — a deep dive into fluid simulation and world-building.", date: "2024-10-12" },
+    { category: "business", tag: "Tech Explained", icon: "dns", title: "Why Businesses Need Custom Software", excerpt: "Off-the-shelf tools only get you so far. Here's how Trinova Business approaches ERP, CRM and automation builds that actually fit how a team works.", date: "2024-10-08" },
+    { category: "engineering", tag: "Artificial Intelligence", icon: "hub", title: "How Trinova Uses AI in Production", excerpt: "How machine learning models are streamlining asset creation and workflow automation across Trinova's pipeline — without compromising creative intent.", date: "2024-10-05" },
+    { category: "creative", tag: "Production", icon: "movie", title: "Inside Trinova Production: Storyboard to Final Render", excerpt: "A look at the full CGI and virtual production pipeline behind Trinova Production's commercials, documentaries and architectural visualization work.", date: "2024-09-29" },
+    { category: "research", tag: "Industry Watch", icon: "insights", title: "Digital Twins and the Future of Spatial Computing", excerpt: "Curated commentary on where digital twins, AR/VR and real-time rendering are heading next — and what it means for Trinova's R&amp;D roadmap.", date: "2024-09-24" },
+    { category: "business", tag: "Case Study", icon: "hotel", title: "Building Hotel Management Software Front Desks Actually Use", excerpt: "How Trinova Business approached a hotel management system engagement, from requirement gathering through deployment and staff training.", date: "2024-09-16" },
+    { category: "careers", tag: "Inside Trinova", icon: "groups", title: "Life at Trinova: Meet the Team Building Rivals of Water", excerpt: "A behind-the-scenes look at the programmers, artists and designers across our Hyderabad, Raipur and Chandigarh offices.", date: "2024-09-10" },
+  ];
+
+  const grid = document.getElementById('article-grid');
+  const emptyState = document.getElementById('empty-state');
+
+  function render(filter) {
+    grid.innerHTML = '';
+    const items = filter === 'all' ? ARTICLES : ARTICLES.filter((a) => a.category === filter);
+    emptyState.classList.toggle('hidden', items.length > 0);
+    items.forEach((a, i) => {
+      const card = document.createElement('article');
+      card.className = 'glass-card rounded-xl overflow-hidden p-6 group cursor-pointer flex flex-col h-full reveal-on-scroll active' + (i % 3 !== 0 ? ' stagger-' + (i % 3) : '');
+      const d = new Date(a.date);
+      const dateLabel = d.toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' });
+      card.innerHTML = `
+        <div class="h-44 md:h-48 rounded-lg overflow-hidden mb-6 relative aether-art">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary text-5xl opacity-50 group-hover:scale-110 transition-transform duration-700">${a.icon}</span>
+          </div>
+        </div>
+        <span class="font-label-md text-label-md text-imperial-purple uppercase tracking-wider mb-3 block">${a.tag}</span>
+        <h4 class="font-body-lg text-body-lg font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">${a.title}</h4>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow line-clamp-3">${a.excerpt}</p>
+        <time datetime="${a.date}" class="font-caption text-caption text-outline uppercase">${dateLabel}</time>
+      `;
+      grid.appendChild(card);
+    });
+  }
+  render('all');
+
+  document.querySelectorAll('#filter-chips [data-filter]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#filter-chips [data-filter]').forEach((b) => b.classList.remove('chip-active'));
+      btn.classList.add('chip-active');
+      render(btn.getAttribute('data-filter'));
+    });
+  });
+</script>
+</body>
+</html>
